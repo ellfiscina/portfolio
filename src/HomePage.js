@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Parallax, Background } from "react-parallax";
 import "./HomePage.css";
-import { getPhotos } from "./requests";
+
 const insideStyles = {
   background: "transparent",
   padding: 20,
@@ -12,28 +12,16 @@ const insideStyles = {
 };
 
 function HomePage() {
-  const [initialized, setInitialized] = useState(false);
-  const [images, setImages] = useState([]);
-  const [layers, setLayers] = useState([]);
-  const loadImages = async () => {
-    const response = await getPhotos();
-    setImages(response.data.hits);
-  };
-  useEffect(() => {
-    if (!initialized) {
-      loadImages();
-      setInitialized(true);
-    }
-  });
+    const images = ['./img_parallax.jpg', './img_parallax2.jpg', './img_parallax3.jpg'];
+    
   return (
     <div className="home-page">
       {images.map((img, i) => {
         return (
-          <>
+          <div key = {i}>
             <Parallax
               blur={10}
-              bgImage={img.userImageURL}
-              bgImageAlt={img.tags}
+              bgImage={require(img)}
               strength={600}
               renderLayer={percentage => (
                 <div>
@@ -53,10 +41,10 @@ function HomePage() {
               )}
             >
               <div style={{ height: 500 }}>
-                <div style={insideStyles}>{img.tags}</div>
+                <div style={insideStyles}>{i}</div>
               </div>
             </Parallax>
-          </>
+          </div>
         );
       })}
     </div>
