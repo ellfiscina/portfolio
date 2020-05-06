@@ -12,7 +12,7 @@ const insideStyles = {
 };
 
 function HomePage() {
-    const images = ['./img_parallax.jpg', './img_parallax2.jpg', './img_parallax3.jpg'];
+    const images = ['./img/img_parallax.jpg', './img/img_parallax2.jpg', './img/img_parallax3.jpg'];
     
   return (
     <div className="home-page">
