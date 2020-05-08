@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import "./TopBar.css";
 import { withRouter } from "react-router-dom";
+import "./TopBar.css";
 
 class TopBar extends Component {
     render() {

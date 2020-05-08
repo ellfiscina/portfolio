@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import TopBar from "./TopBar";
 import { Router, Route, Link } from "react-router-dom";
 import { createBrowserHistory as createHistory } from "history";
-import HomePage from "./HomePage";
+import TopBar from "../topbar/TopBar";
+import HomePage from "../homepage/HomePage";
 import "./App.css";
 
 const history = createHistory();
