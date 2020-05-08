@@ -47,6 +47,30 @@ function HomePage() {
           </div>
         );
       })}
+
+<Parallax
+        strength={600}
+        renderLayer={percentage => (
+        <div>
+            <div
+            style={{
+                position: "absolute",
+                background: `blue`,
+                left: "50%",
+                top: "50%",
+                borderRadius: "50%",
+                transform: "translate(-50%,-50%)",
+                width: percentage * 500,
+                height: percentage * 500,
+            }}
+            />
+        </div>
+        )}
+    >
+        <div style={{ height: 500 }}>
+        <div style={insideStyles}>larala</div>
+        </div>
+    </Parallax>
     </div>
   );
 }

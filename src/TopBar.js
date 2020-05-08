@@ -8,13 +8,14 @@ class TopBar extends Component {
     render() {
     const { match, location, history } = this.props;
     const pathname = location;
+    
     return (
-        <Navbar bg="primary" expand="lg" variant="dark">
-          <Navbar.Brand href="#home">Scrolling App</Navbar.Brand>
+        <Navbar bg="light" expand="lg" variant="light" fixed="top">
+          <Navbar.Brand href="#home">Scrolling</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/" active={pathname == "/"}>
+              <Nav.Link href="/" active={pathname === "/"}>
                 Home
               </Nav.Link>
             </Nav>
