@@ -6,8 +6,8 @@ import "./TopBar.css";
 
 class TopBar extends Component {
     render() {
-    const { match, location, history } = this.props;
-    const pathname = location;
+    
+    const pathname = this.props;
     
     return (
         <Navbar bg="light" expand="lg" variant="light" fixed="top">

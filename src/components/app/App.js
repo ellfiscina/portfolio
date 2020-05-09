@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import { Router, Route, Link } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import { createBrowserHistory as createHistory } from "history";
 import TopBar from "../topbar/TopBar";
 import HomePage from "../homepage/HomePage";
 import "./App.css";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const history = createHistory();
 
