@@ -3,7 +3,7 @@
 }
 
 .HomePage-home {
-    margin-top: 56px;
+    margin-bottom: 60px;
     background-image: url('./assets/bg-1.png');
     background-repeat: no-repeat;
     background-size: 300px 300px;
@@ -14,7 +14,6 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    
 }
 
 .HomePage-title {
@@ -29,10 +28,53 @@
 }
 
 .HomePage-about {
-    height: 500px;
+    margin-bottom: 50px;
 }
 
-span {
-    background-color: white;
+.HomePage-section-title {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.HomePage-skills span {
+    font-size: small;
+}
+
+.HomePage-skills h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.HomePage-skills .progress {
+    height: 0.5rem !important;
+    margin-bottom: 15px;
+    /* margin-top: 5px; */
+}
+
+.HomePage-skills .progress-bar {
+    background-color: #f4d03f;
+}
+
+.HomePage-list {
     color: #f4d03f;
-  }
+}
+
+.HomePage-list span {
+    color: black;
+    float: right;
+}
+
+.HomePage-coding {
+    margin-top: 10px;
+
+}
+
+.HomePage-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.HomePage-icons img {
+    padding: 10px;
+}
