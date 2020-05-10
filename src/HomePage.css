@@ -1,0 +1,38 @@
+.HomePage {
+    height: fit-content;
+}
+
+.HomePage-home {
+    margin-top: 56px;
+    background-image: url('./assets/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position-y: bottom;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    
+}
+
+.HomePage-title {
+    position: absolute;
+    left: 10%;
+    text-align: justify;
+    color: black;
+}
+
+.HomePage-banner {
+    width: 50%;
+}
+
+.HomePage-about {
+    height: 500px;
+}
+
+span {
+    background-color: white;
+    color: #f4d03f;
+  }

@@ -6,17 +6,23 @@ import "./TopBar.css";
 
 class TopBar extends Component {
     render() {
-    
-    const pathname = this.props;
+    const location = this.props.location;
+    const pathname = location.pathname;
     
     return (
-        <Navbar bg="light" expand="lg" variant="light" fixed="top">
+        <Navbar variant="light" fixed="sticky">
           <Navbar.Brand href="#home">Scrolling</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/" active={pathname === "/"}>
                 Home
+              </Nav.Link>
+              <Nav.Link href="#about" active={pathname === "#about"}>
+                About
+              </Nav.Link>
+              <Nav.Link href="#projects" active={pathname === "#projects"}>
+                Projects
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
