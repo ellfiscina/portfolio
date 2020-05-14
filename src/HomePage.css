@@ -27,7 +27,7 @@
     width: 50%;
 }
 
-.HomePage-about {
+.HomePage-about, .HomePage-projects {
     margin-bottom: 50px;
 }
 
@@ -64,8 +64,8 @@
     float: right;
 }
 
-.HomePage-coding {
-    margin-top: 10px;
+.HomePage-hobbies {
+    margin-top: 50px;
 
 }
 
@@ -77,4 +77,17 @@
 
 .HomePage-icons img {
     padding: 10px;
+}
+
+.HomePage-image {
+    display: flex;
+    justify-content: center;
+}
+
+.HomePage-image img{
+    max-height: 325px;
+}
+
+.HomePage-card img{
+    max-height: 250px;
 }

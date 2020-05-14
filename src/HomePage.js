@@ -4,47 +4,21 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Image from 'react-bootstrap/Image';
+import CardGroup from 'react-bootstrap/CardGroup';
+import Card from 'react-bootstrap/Card';
 import "./HomePage.css";
+import {skills, about, icons, hobbies} from './helpers';
 
 class HomePage extends Component {
     render() {
-        //TO-DO export const
-        const skills = [
-            {value: 80, label: "Frontend Developer"},
-            {value: 65, label: "Backend Developer"},
-            {value: 60, label: "UI Developer"},
-            {value: 45, label: "Designer"}
-        ];
-
-        const about = [
-            {label: 'Name', value: 'Ellen Fiscina'},
-            {label: 'Age', value: '27 years'},
-            {label: 'Skype', value: 'X'},
-            {label: 'Phone', value: 'Y'},
-            {label: 'Email', value: 'ellfiscina@gmail.com'}
-        ];
-
-        const icons = [
-            'python',
-            'javascript',
-            'html-5',
-            'css',
-            'ruby',
-            'react',
-            'c',
-            'cplus',
-            'github',
-            'gnu-bash'
-        ];
-
       return (
         <div className="HomePage">
             <div className="HomePage-home" id="home">
                 <h1 className="HomePage-title">Hi, I am Ellen. <br /> Full Stack Developer <br /> UI/UX Researcher</h1>
                 <img src={require('./assets/me2.JPG')} className="HomePage-banner" />
             </div>
-            <div className="HomePage-about" id="about">
-            <Container>
+            <Container className="HomePage-about" id="about">
                 <h2 className="HomePage-section-title">About <span className="highlight">me</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 <Row>
@@ -57,7 +31,8 @@ class HomePage extends Component {
                             )}
                         </ListGroup>
                     </Col>
-                    <Col>
+                    <Col className="HomePage-image">
+                        <Image src={require('./assets/me3.jpg')} fluid/>
                     </Col>
                     <Col className="HomePage-skills">
                         <h5>My Skills</h5>
@@ -67,21 +42,31 @@ class HomePage extends Component {
                                 <ProgressBar now={s.value} />
                             </div>
                         )}
-                        <div className="HomePage-coding">
-                            <h5>My coding experience</h5>
+                        <div className="HomePage-hobbies">
+                            <h5>My Hobbies</h5>
                             <div className="HomePage-icons">
-                                {icons.map(i =>
-                                    <img key={i} src={require(`./assets/icons/${i}.png`)} />
+                                {hobbies.map(i =>
+                                    <img key={i} src={require(`./assets/${i}.png`)} />
                                 )}
                             </div>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            </div>
-            <div className="HomePage-projects">
-
-            </div>
+            
+            <Container className="HomePage-projects">
+                <CardGroup>
+                    <Card className="HomePage-card">
+                        <Card.Img variant="top" src={require("./assets/exlibris.png")} />
+                    </Card>
+                    <Card className="HomePage-card">
+                        <Card.Img variant="top" src={require("./assets/emotion.png")} />
+                    </Card>
+                    <Card className="HomePage-card">
+                        <Card.Img variant="top" src={require("./assets/iot.png")} />
+                    </Card>
+                </CardGroup>
+            </Container>
         </div>
       );
     }
