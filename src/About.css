@@ -1,0 +1,63 @@
+.About{
+    margin-bottom: 50px;
+}
+
+.About-skills span {
+    font-size: small;
+}
+
+.About-skills h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.About-skills .progress {
+    height: 0.5rem !important;
+    margin-bottom: 15px;
+    /* margin-top: 5px; */
+}
+
+.About-skills .progress-bar {
+    background-color: #f4d03f;
+}
+
+.About-list {
+    color: #f4d03f;
+}
+
+.About-list span {
+    color: black;
+    float: right;
+}
+
+.About-hobbies {
+    margin-top: 50px;
+
+}
+
+.About-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.About-icons div {
+    background-color: #f9f9f9;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-content: center;
+}
+
+.About-icons img {
+    display: block;
+    margin: auto;
+}
+.About-image {
+    display: flex;
+    justify-content: center;
+}
+
+.About-image img{
+    max-height: 325px;
+}
