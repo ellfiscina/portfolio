@@ -26,10 +26,10 @@ const icons = [
 ];
 
 const hobbies = [
-    'book_lineal',
-    'game_lineal',
-    'bake_lineal',
-    'knit_lineal'
+    'reading',
+    'gaming',
+    'baking',
+    'knitting'
 ];
 
 export {skills, about, icons, hobbies};

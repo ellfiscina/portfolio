@@ -10,10 +10,18 @@ class HomePage extends Component {
     render() {
       return (
         <div className="HomePage">
-            <Banner />
-            <About />
-            <Projects />
-            <Contact />
+            <div className="HomePage-banner">
+                <Banner />
+            </div>
+            <div className="HomePage-about">
+                <About />
+            </div>
+            <div className="HomePage-projects">
+                <Projects />
+            </div>
+            <div className="HomePage-contact">
+                <Contact />
+            </div>
         </div>
       );
     }

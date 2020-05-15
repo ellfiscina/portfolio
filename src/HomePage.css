@@ -2,6 +2,16 @@
     height: fit-content;
 }
 
+.HomePage-about, .HomePage-contact, .HomePage-projects {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.HomePage-about, .HomePage-contact {
+    background-color: #f9f9f9;
+}
+
+
 .Section-title {
     margin-top: 50px;
     padding-bottom: 20px;
