@@ -5,6 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faMapMarkerAlt, faAt } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import "./Contact.css";
 
@@ -83,6 +86,18 @@ class Contact extends Component {
             </Form>
           </Col>
           <Col>
+            <div>
+              <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" /> <span>Meu endereço<br/>cep e cidade</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faPhone} size="lg" /> <span>+46 076 0xx xxxx</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faAt} size="lg" /> <span>ellfiscina@gmail.com</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faLinkedinIn} size="lg" /> <span>meu linkedin</span>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -104,9 +119,7 @@ class Contact extends Component {
 
   onMessageChange(event) {
     this.setState({ message: event.target.value })
-  }
-
-  
+  }  
 }
 
 export default Contact;
