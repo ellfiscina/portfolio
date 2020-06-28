@@ -11,7 +11,7 @@ class TopBar extends Component {
     
     return (
         <Navbar variant="light" fixed="sticky">
-          <Navbar.Brand href="#home">Scrolling</Navbar.Brand>
+          <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
