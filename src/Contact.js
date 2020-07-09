@@ -47,7 +47,7 @@ class Contact extends Component {
       <Container className="Contact">
         <h2 className="Section-title">Contact</h2>
         <Row>
-          <Col>
+          <Col xs={6}>
             <Form id="Contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <Form.Row>
                 <Form.Group as={Col} controlId="name">
@@ -87,16 +87,19 @@ class Contact extends Component {
           </Col>
           <Col>
             <div>
-              <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" /> <span>Meu endereço<br/>cep e cidade</span>
+              <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" /> 
+              <p>Meu endereço<br/>cep e cidade</p>
             </div>
             <div>
-              <FontAwesomeIcon icon={faPhone} size="lg" /> <span>+46 076 0xx xxxx</span>
+              <FontAwesomeIcon icon={faPhone} size="2x" /> <p>+46 076 0xx xxxx</p>
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <FontAwesomeIcon icon={faAt} size="2x" /> <p>ellfiscina@gmail.com</p>
             </div>
             <div>
-              <FontAwesomeIcon icon={faAt} size="lg" /> <span>ellfiscina@gmail.com</span>
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faLinkedinIn} size="lg" /> <span>meu linkedin</span>
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" /> <p>meu linkedin</p>
             </div>
           </Col>
         </Row>

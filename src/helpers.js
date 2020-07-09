@@ -7,7 +7,6 @@ const skills = [
 const about = [
     {label: 'Name', value: 'Ellen Fiscina'},
     {label: 'Age', value: '27 years'},
-    {label: 'Skype', value: 'X'},
     {label: 'Phone', value: 'Y'},
     {label: 'Email', value: 'ellfiscina@gmail.com'}
 ];

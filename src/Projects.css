@@ -5,3 +5,25 @@
 .Projects-card img{
     max-height: 250px;
 }
+.card:hover .card-img,
+.card:focus .card-img {
+  transform: scale(1.02);
+  opacity:0.5;
+}
+
+.card:hover .card-img-overlay{
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.card-img-overlay>.card-title, .card-img-overlay>.card-text{
+    visibility:hidden;
+}
+
+.card-img-overlay:hover .card-title, .card-img-overlay:hover .card-text{
+    visibility: visible;
+}
+
+.card:hover .card-img-overlay .card-text{
+    font-size:0.9em;
+    letter-spacing:0.02em;
+}

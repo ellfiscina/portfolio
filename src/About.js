@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
-import Overlay from 'react-bootstrap/Overlay';
+import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import "./About.css";
@@ -28,6 +28,7 @@ function About() {
                                 </ListGroup.Item>
                             )}
                         </ListGroup>
+                        <Button>Download CV</Button>
                     </Col>
                     <Col className="About-image" xs={12} md={4}>
                         <Image src={require('./assets/me3.jpg')} fluid />
