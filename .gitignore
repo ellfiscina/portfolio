@@ -1949,3 +1949,4 @@ node_modules/webpack-dev-server/node_modules/eventsource/package.json
 node_modules/webpack-dev-server/node_modules/faye-websocket/package.json
 node_modules/webpack-dev-server/node_modules/ms/package.json
 node_modules/webpack-dev-server/node_modules/sockjs-client/package.json
+build/*
