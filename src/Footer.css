@@ -1,0 +1,28 @@
+.Footer {
+    height: 50px;
+    background-color: #f4d03f;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.Footer-flaticon {
+    color: #fff;
+    font-size: 14px;
+}
+
+.Footer-flaticon a {
+    color: #fff;
+}
+
+.Footer-links a {
+    margin-right: 10px;
+}
+
+.Footer svg {
+    color: #fff;
+}

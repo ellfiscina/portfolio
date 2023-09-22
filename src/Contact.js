@@ -22,7 +22,7 @@ class Contact extends Component {
     }
   }
 
-  handleSubmit(e) {
+  /* handleSubmit(e) {
     e.preventDefault();
     
     axios({
@@ -41,13 +41,13 @@ class Contact extends Component {
 
   resetForm(){  
     this.setState({name: '', email: '', subject: '', message: ''})
-  }
+  } */
   render() {
     return (
       <Container className="Contact">
         <h2 className="Section-title">Contact</h2>
         <Row>
-          <Col xs={6}>
+          {/* <Col xs={6}>
             <Form id="Contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <Form.Row>
                 <Form.Group as={Col} controlId="name">
@@ -84,8 +84,8 @@ class Contact extends Component {
                 Submit
               </Button>
             </Form>
-          </Col>
-          <Col>
+          </Col> */}
+          {/* <Col>
             <div>
               <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" /> 
               <p>Meu endereço<br/>cep e cidade</p>
@@ -93,13 +93,13 @@ class Contact extends Component {
             <div>
               <FontAwesomeIcon icon={faPhone} size="2x" /> <p>+46 076 0xx xxxx</p>
             </div>
-          </Col>
+          </Col> */}
           <Col>
             <div>
-              <FontAwesomeIcon icon={faAt} size="2x" /> <p>ellfiscina@gmail.com</p>
+              <FontAwesomeIcon icon={faAt} size="2x" /> <span>ellfiscina@gmail.com</span>
             </div>
             <div>
-              <FontAwesomeIcon icon={faLinkedinIn} size="2x" /> <p>meu linkedin</p>
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" /> <a href="https://www.linkedin.com/in/ellen-fiscina-43043a162/">Linkedin</a>
             </div>
           </Col>
         </Row>
@@ -107,22 +107,22 @@ class Contact extends Component {
     );
   }
 
-  onNameChange(event) {
-    console.log(event)
-    this.setState({ name: event.target.value })
-  }
+  // onNameChange(event) {
+  //   console.log(event)
+  //   this.setState({ name: event.target.value })
+  // }
 
-  onEmailChange(event) {
-    this.setState({ email: event.target.value })
-  }
+  // onEmailChange(event) {
+  //   this.setState({ email: event.target.value })
+  // }
 
-  onSubjectChange(event) {
-    this.setState({ subject: event.target.value })
-  }
+  // onSubjectChange(event) {
+  //   this.setState({ subject: event.target.value })
+  // }
 
-  onMessageChange(event) {
-    this.setState({ message: event.target.value })
-  }  
+  // onMessageChange(event) {
+  //   this.setState({ message: event.target.value })
+  // }  
 }
 
 export default Contact;

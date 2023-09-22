@@ -7,3 +7,8 @@ body {
 .highlight {
   color: #f4d03f;
 }
+
+.btn-primary {
+  background-color: #f4d03f!important;
+  border-color: #f4d03f!important;
+}

@@ -11,11 +11,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router history={history}>
+        {/* <Router history={history}>
           <TopBar />
-          {/* <Route path="/" exact component={HomePage} /> */}
-          <HomePage />
-        </Router>
+          <Route path="/" exact component={HomePage} />
+        </Router> */}
+        <HomePage />
       </div>
     );
   }

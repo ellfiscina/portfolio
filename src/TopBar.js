@@ -1,8 +1,17 @@
 import React, {Component} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { withRouter } from "react-router-dom";
+import { useNavigate } from 'react-router';
 import "./TopBar.css";
+
+
+export const withRouter = (Component) =>{
+    const Wrapper = (props) =>{
+        const history = useNavigate();
+        return <Component history={history} {...props}/>
+    } 
+    return Wrapper;
+}
 
 class TopBar extends Component {
     render() {

@@ -5,6 +5,7 @@
 .list-group-item {
     background-color: inherit !important;
 }
+
 .About-skills span {
     font-size: small;
 }
@@ -31,6 +32,8 @@
 .About-list span {
     color: black;
     float: right;
+    display: flex;
+    gap: 1rem
 }
 
 .About-hobbies {
@@ -55,6 +58,12 @@
     display: block;
     margin: auto;
 }
+
+.About-icons div:hover img{
+    width: 40px;
+    height: 40px;
+}
+
 .About-image {
     display: flex;
     justify-content: center;
@@ -62,4 +71,27 @@
 
 .About-image img{
     max-height: 325px;
+}
+
+@media only screen and (max-width:600px){
+    .About-image {
+        margin: 30px 0 !important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .About-btn {
+        width: 100%;
+    }
+}
+
+.About-btn {
+    margin-top: 20px;
+}
+
+.About-skills-icons {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
 }
