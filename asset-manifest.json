@@ -1,19 +1,31 @@
 {
-  "main.css": "static/css/main.36d86fa1.css",
-  "main.css.map": "static/css/main.36d86fa1.css.map",
-  "main.js": "static/js/main.57bd7a4b.js",
-  "main.js.map": "static/js/main.57bd7a4b.js.map",
-  "static/media/bg-1.png": "static/media/bg-1.d0436669.png",
-  "static/media/emotion.png": "static/media/emotion.3b69a216.png",
-  "static/media/emotion1.png": "static/media/emotion1.29515b0e.png",
-  "static/media/emotion2.png": "static/media/emotion2.c31b2889.png",
-  "static/media/emotion3.png": "static/media/emotion3.f22eb247.png",
-  "static/media/exlibris.png": "static/media/exlibris.c511230c.png",
-  "static/media/exlibris2.png": "static/media/exlibris2.583ba246.png",
-  "static/media/exlibris3.png": "static/media/exlibris3.667e2648.png",
-  "static/media/interage.png": "static/media/interage.3a2a71a3.png",
-  "static/media/iot.png": "static/media/iot.f2686d71.png",
-  "static/media/iot2.png": "static/media/iot2.9bb7e3e4.png",
-  "static/media/me2.JPG": "static/media/me2.49a564fd.JPG",
-  "static/media/me3.jpg": "static/media/me3.7c232db2.jpg"
+  "files": {
+    "main.css": "/portfolio/static/css/main.9c4b1c89.css",
+    "main.js": "/portfolio/static/js/main.5a4b4e1b.js",
+    "static/media/emotion.png": "/portfolio/static/media/emotion.155e2b2da1e3c5e7b3e4.png",
+    "static/media/me3.jpg": "/portfolio/static/media/me3.df0515ecbdd4eca43b1b.jpg",
+    "static/media/emotion3.png": "/portfolio/static/media/emotion3.6800e869feb744eb5011.png",
+    "static/media/emotion1.png": "/portfolio/static/media/emotion1.b02b80166bcdb0d93eb6.png",
+    "static/media/emotion2.png": "/portfolio/static/media/emotion2.6613034e0b8d9cd9ae19.png",
+    "static/media/interage.png": "/portfolio/static/media/interage.d62664507b3d9906975e.png",
+    "static/media/me2.JPG": "/portfolio/static/media/me2.1150b722b2d0e175f936.JPG",
+    "static/media/exlibris.png": "/portfolio/static/media/exlibris.7a4d9803ccf603791e8f.png",
+    "static/media/iot2.png": "/portfolio/static/media/iot2.5a930f7e50bb4e9ce88e.png",
+    "static/media/exlibris2.png": "/portfolio/static/media/exlibris2.471fef7efaa54ad2bdd2.png",
+    "static/media/iot.png": "/portfolio/static/media/iot.a139ec51466ce42cb8c1.png",
+    "static/media/exlibris3.png": "/portfolio/static/media/exlibris3.235671d25765d894b4d5.png",
+    "static/media/bg-1.png": "/portfolio/static/media/bg-1.4d31051e02adc961bff0.png",
+    "static/media/c-sharp.png": "/portfolio/static/media/c-sharp.4a32f53d425c7ad4cb05.png",
+    "static/media/swift.png": "/portfolio/static/media/swift.afa1f6867fc4ff354548.png",
+    "static/media/typescript.png": "/portfolio/static/media/typescript.8e08c2165d60d7ca62a9.png",
+    "static/media/django.png": "/portfolio/static/media/django.559d0c6161a6fb950f02.png",
+    "static/media/postgresql.png": "/portfolio/static/media/postgresql.d46df52cc754d81bc598.png",
+    "index.html": "/portfolio/index.html",
+    "main.9c4b1c89.css.map": "/portfolio/static/css/main.9c4b1c89.css.map",
+    "main.5a4b4e1b.js.map": "/portfolio/static/js/main.5a4b4e1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c4b1c89.css",
+    "static/js/main.5a4b4e1b.js"
+  ]
 }
